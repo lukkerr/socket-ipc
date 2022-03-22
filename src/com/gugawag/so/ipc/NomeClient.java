@@ -28,7 +28,8 @@ public class NomeClient {
 
 			PrintWriter pout = new PrintWriter(servidorSock.getOutputStream(), true);
 			// TODO Altere abaixo para enviar seu nome ao servidor
-			pout.println("SEU NOME AQUI");
+			pout.println(" NomeClient | Aluno: Luciano de Carvalho Souza Filho");
+
 			servidorSock.close();
 		}
 		catch (IOException ioe) {

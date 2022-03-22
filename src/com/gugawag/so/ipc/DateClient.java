@@ -24,6 +24,9 @@ public class DateClient {
 
 			String line = bin.readLine();
 			System.out.println("O servidor me disse:" + line);
+
+			PrintWriter pout = new PrintWriter(sock.getOutputStream(), true);
+			pout.println(" DateClient | Aluno: Luciano de Carvalho Souza Filho");
 				
 			sock.close();
 		}
